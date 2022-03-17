@@ -1,62 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>CAFÉ COADO NA HORA</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Menu Responsivo</title>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <img src="imagem/logo-rocketseat.svg" width="150" height="60" alt="">
-      <div class="menu-section">
-        <div class="menu-toggle">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
+  <body>
+    <header>
+      <div class="container">
+        <figure class="logo"></figure>
+        <div class="menu-section">
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="">Menu</a>
+              </li>
+              <li>
+                <a href="">Lojas</a>
+              </li>
+              <li>
+                <a href="">Produtos</a>
+              </li>
+              <li>
+                <a href="">História</a>
+              </li>
+              <li>
+                <a href="#rodape">Contado</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="">Início</a>
-            </li>
-            <li>
-              <a href="">Contado</a>
-            </li>
-            <li>
-              <a href="">Produtos</a>
-            </li>
-            <li>
-              <a href="">Youtube</a>
-            </li>
-            <li>
-              <a href="">Notícias</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <div>
-        <h2>As melhores tecnologias em programação, direto ao ponto e do jeito certo.
-
-        </h2>
-        <p>
-          No meio de tanta informação e da quantidade de ferramenta que surgem todos os dias, você precisa de alguem que
-          te leve na direção certa
-        </p>
-        <a href="#" class="button">Quero aprender mais!!</a>
+    </header>
+    <section class="banner">
+      <div class="banner-texto">
+        <div>
+          <h2>Os melhores cafés vocês encontram aqui!!!</h2>
+          <p>
+            Conforme abrimos nossas lojas, permanecemos no compromisso com a
+            saúde e bem-estar de nossos partners e consumidores.
+          </p>
+          <a href="#" class="button">Saiba mais!!!</a>
+        </div>
+        <figure class="banner-img"></figure>
       </div>
-      <img src="imagem/tecnologia1.png" width="200" alt="">
-    </div>
-  </section>
-  <script src="menu.js"></script>
-</body>
-
+    </section>
+    <section class="produtos">
+      <div class="produtos-texto">
+        <figure class="produtos-img1"></figure>
+        <div class="texto">
+          <h3>Saboreie uma pausa</h3>
+          <p>Saboreie uma pausa com uma de nossas bebidas</p>
+          <strong><p>Experimente o nosso delicioso café mocha</p></strong>
+          <a href="#" class="button">Saiba mais!!!</a>
+        </div>
+      </div>
+    </section>
+    <section class="produtos">
+      <div class="produtos-texto">
+        <div class="texto">
+          <h3>Saboreie uma pausa</h3>
+          <p>Saboreie uma pausa com uma de nossas bebidas</p>
+          <strong><p>Experimente o nosso delicioso café expresso</p></strong>
+          <a href="#" class="button">Saiba mais!!!</a>
+        </div>
+        <figure class="produtos-img2"></figure>
+      </div>
+    </section>
+    <section class="produtos">
+      <div class="produtos-texto">
+        <figure class="produtos-img3"></figure>
+        <div class="texto">
+          <h3>Saboreie uma pausa</h3>
+          <p>Saboreie uma pausa com uma de nossas bebidas</p>
+          <strong><p>Experimente o nosso delicioso frappuccino</p></strong>
+          <a href="#" class="button">Saiba mais!!!</a>
+        </div>
+      </div>
+    </section>
+    <footer id="rodape">
+      <nav id="redes-sociais">
+        <ul>
+          <a href="">
+            <li><i class="fa fa-facebook fa-lg"></i></li>
+          </a>
+          <a href="">
+            <li><i class="fa fa-twitter fa-lg"></i></li>
+          </a>
+          <a href="">
+            <li class="fa fa-google fa-lg"></li>
+          </a>
+          <a href="">
+            <li><i class="fa fa-instagram fa-lg"></i></li>
+          </a>
+          <a href="">
+            <li><i class="fa fa-envelope fa-lg"></i></li>
+          </a>
+        </ul>
+      </nav>
+      <address>
+        Copyright &copy; WebMaster 2020. Todos os direitos reservados.
+      </address>
+    </footer>
+    <script src="menu.js"></script>
+  </body>
 </html>
