@@ -155,7 +155,6 @@ section.produtos .produtos-texto {
   background-image: url(../img/cafe-mocha.jpg);
   background-position: center;
   background-size: 100%;
-  /* background-size: cover; */
   background-repeat: no-repeat;
   width: 50%;
   height: 340px;
@@ -244,6 +243,60 @@ section.produtos .produtos-texto {
   text-shadow: 0 0 1px black;
 }
 
+/* CCS PARA FUNÇÃO DE ABRIR MODAL */
+
+.btn-modal {
+  position: absolute;
+}
+
+.modal {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  display: none;
+}
+
+.fechar i {
+  font-size: 2.7em;
+  float: right;
+  color: white;
+}
+
+/* Formulário Modal */
+
+fieldset {
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+fieldset h2 {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+fieldset div {
+  padding: 15px 20px;
+}
+
+label {
+  margin-left: 10px;
+  font-size: 2em;
+  color: white;
+}
+
+input {
+  padding: 7px 7px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
 @media (max-width: 1024px) {
   .banner-img {
     width: 1024px;
@@ -251,45 +304,6 @@ section.produtos .produtos-texto {
 
   .produtos-img1 {
     width: 400px;
-  }
-}
-
-@media (max-width: 476px) {
-  .banner-img {
-    background-image: url(../img/c2.png);
-    background-position: center;
-    background-size: 50%;
-    background-repeat: no-repeat;
-  }
-
-  .produtos-img1 {
-    background-image: url(../img/c1.png);
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-  }
-
-  .produtos-img2 {
-    background-image: url(../img/c5.png);
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-  }
-
-  .produtos-img3 {
-    background-image: url(../img/c3.png);
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-  }
-
-  .produtos div {
-    margin-bottom: 10px;
-  }
-
-  .produtos a {
-    margin: auto;
-    width: 160px;
   }
 }
 
@@ -440,65 +454,58 @@ button.btn {
   transition: all 150ms linear 0s;
 }
 
-/* CCS PARA FUNÇÃO DE ABRIR MODAL */
+@media (max-width: 476px) {
+  .banner-img {
+    background-image: url(../img/c2.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
 
-.btn-modal {
-  position: absolute;
-}
+  .produtos-img1 {
+    background-image: url(../img/c1.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
 
-.modal {
-  width: 400px;
-  height: 400px;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 20%;
-  left: 35%;
-  display: none;
-}
+  .produtos-img2 {
+    background-image: url(../img/c5.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
 
-.fechar i {
-  font-size: 2.7em;
-  float: right;
-  color: white;
-}
+  .produtos-img3 {
+    background-image: url(../img/c3.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
 
-/* Formulário Modal */
+  .produtos div {
+    margin-bottom: 10px;
+  }
 
-.formulario {
-  width: 100%;
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .produtos a {
+    margin: auto;
+    width: 160px;
+  }
 
-fieldset {
-  border-radius: 10px;
-  margin: 10px 10px;
-}
+  fieldset.modal {
+    width: 350px !important;
+    height: 350px !important;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
 
-fieldset h2 {
-  margin-top: 30px;
-  text-align: center;
-  color: white;
-}
+  input {
+    padding: 3px 3px !important;
+  }
 
-fieldset div {
-  padding: 15px 20px;
-}
-
-label {
-  margin-left: 10px;
-  font-size: 2em;
-  color: white;
-}
-
-input {
-  padding: 7px 7px;
-}
-
-input:focus {
-  box-shadow: 0 0 0 0;
-  outline: 0;
+  label {
+    font-size: 1.7em !important;
+  }
 }
