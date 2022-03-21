@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
     <title>CAFÉ COADO NA HORA</title>
   </head>
 
@@ -50,9 +50,34 @@
           <h2>Os melhores cafés vocês encontram aqui!!!</h2>
           <p>
             Conforme abrimos nossas lojas, permanecemos no compromisso com a
-            saúde e bem-estar de nossos partners e consumidores.
+            saúde e bem-estar de nossos partners e consumidores
           </p>
-          <a href="#" class="button">Saiba mais!!!</a>
+          <strong><p>Preencha seus dados e venha ser um de nós</p></strong>
+          <!-- <a href="#" class="button">Saiba mais!!!</a> -->
+          <!-- Inicio para abir modal -->
+          <button onclick="acao()" class="btn">Click Aqui</button>
+          <!-- <div onclick="acao()" class="btn">click</div>-->
+          <fieldset class="modal">
+            <div>
+              <div onclick="fechar()" class="fechar">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+              </div>
+            </div>
+            <h2>Dados pessoais</h2>
+            <div>
+              <label>Nome:</label>
+              <input type="text" name="nome" id="nome" required />
+            </div>
+            <div>
+              <label>E-mail:</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label>Data de nascimento:</label>
+              <input type="date" name="data" id="data" />
+            </div>
+          </fieldset>
+          <!-- Fim modal -->
         </div>
         <figure class="banner-img"></figure>
       </div>
@@ -114,6 +139,6 @@
         Copyright &copy; WebMaster 2020. Todos os direitos reservados.
       </address>
     </footer>
-    <script src="menu.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

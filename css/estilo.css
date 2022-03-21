@@ -312,6 +312,10 @@ section.produtos .produtos-texto {
     margin-bottom: 10px;
   }
 
+  button.btn {
+    margin-bottom: 10px;
+  }
+
   .produtos .produtos-texto {
     flex-direction: column;
     text-align: center;
@@ -340,6 +344,16 @@ section.produtos .produtos-texto {
 
   .produtos a {
     margin-bottom: 10px;
+  }
+
+  fieldset.modal {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    display: none;
   }
 }
 
@@ -410,4 +424,81 @@ section.produtos .produtos-texto {
     line-height: 6rem;
     display: block;
   }
+}
+
+button.btn {
+  margin-top: 30px;
+  border: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #f1e4d5;
+  background-color: #25544b;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 150ms linear 0s;
+}
+
+/* CCS PARA FUNÇÃO DE ABRIR MODAL */
+
+.btn-modal {
+  position: absolute;
+}
+
+.modal {
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  display: none;
+}
+
+.fechar i {
+  font-size: 2.7em;
+  float: right;
+  color: white;
+}
+
+/* Formulário Modal */
+
+.formulario {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+fieldset h2 {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+fieldset div {
+  padding: 15px 20px;
+}
+
+label {
+  margin-left: 10px;
+  font-size: 2em;
+  color: white;
+}
+
+input {
+  padding: 7px 7px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
 }
