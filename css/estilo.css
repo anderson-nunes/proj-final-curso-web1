@@ -252,7 +252,7 @@ section.produtos .produtos-texto {
 .modal {
   width: 400px;
   height: 400px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(92, 8, 8, 0.767);
   position: absolute;
   top: 20%;
   left: 35%;
@@ -279,7 +279,7 @@ fieldset h2 {
 }
 
 fieldset div {
-  padding: 15px 20px;
+  padding: 13px 20px;
 }
 
 label {
@@ -295,6 +295,19 @@ input {
 input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
+}
+
+.validar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.validar input {
+  border-radius: 7px;
+  margin: 0 7px;
+  border: none;
+  padding: 7px 15px;
 }
 
 @media (max-width: 1024px) {
@@ -363,7 +376,7 @@ input:focus {
   fieldset.modal {
     width: 400px;
     height: 400px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(92, 8, 8, 0.767);
     position: absolute;
     top: 30%;
     left: 10%;
@@ -500,7 +513,7 @@ button.btn:hover {
   fieldset.modal {
     width: 350px !important;
     height: 350px !important;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(92, 8, 8, 0.767);
     position: absolute;
     top: 30%;
     left: 10%;
@@ -512,5 +525,10 @@ button.btn:hover {
 
   label {
     font-size: 1.7em !important;
+  }
+
+  .validar input {
+    border: none !important;
+    padding: 5px 10px !important;
   }
 }

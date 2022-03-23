@@ -12,13 +12,13 @@ menuToggle.addEventListener("click", () => {
 
 // Função para abrir modal //
 
-function acao() {
+function abrirModal() {
   var modal = document.querySelector(".modal");
 
   modal.style.display = "block";
 }
 
-function fechar() {
+function fecharModal() {
   var modal = document.querySelector(".modal");
 
   modal.style.display = "none";
