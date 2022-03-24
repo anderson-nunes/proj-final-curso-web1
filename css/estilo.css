@@ -22,6 +22,10 @@ body {
   background-color: white;
 }
 
+input {
+  cursor: pointer;
+}
+
 header .container {
   display: flex;
   align-items: center;
@@ -203,7 +207,7 @@ section.produtos .produtos-texto {
   height: 340px;
 }
 
-#rodape {
+.rodape {
   background-color: #25544b;
   width: 100%;
   text-align: center;
@@ -212,30 +216,30 @@ section.produtos .produtos-texto {
   margin-top: 10px;
 }
 
-#rodape #redes-sociais ul {
+.rodape .redes-sociais ul {
   display: flex;
   justify-content: center;
 }
 
-#rodape #redes-sociais a {
+.rodape .redes-sociais a {
   color: #f1e4d5;
   font-size: 1.2em;
   margin: 0px 1.5%;
 }
 
-#rodape #redes-sociais a:hover {
+.rodape .redes-sociais a:hover {
   color: white;
 }
 
-#rodape #redes-sociais a i {
+.rodape .redes-sociais a i {
   transition: 0.2s;
 }
 
-#rodape #redes-sociais a i:hover {
+.rodape .redes-sociais a i:hover {
   transform: scale(1.1);
 }
 
-#rodape address {
+.rodape address {
   color: white;
   font-style: normal;
   font-size: 0.8em;
@@ -263,22 +267,23 @@ section.produtos .produtos-texto {
   font-size: 2.7em;
   float: right;
   color: white;
+  cursor: pointer;
 }
 
 /* Formulário Modal */
 
-fieldset {
+form {
   border-radius: 10px;
   margin: 10px 10px;
 }
 
-fieldset h2 {
+form h2 {
   margin-top: 30px;
   text-align: center;
   color: white;
 }
 
-fieldset div {
+form div {
   padding: 13px 20px;
 }
 
@@ -308,6 +313,13 @@ input:focus {
   margin: 0 7px;
   border: none;
   padding: 7px 15px;
+  background-color: #f1e4d5;
+}
+
+#mensagem-erro {
+  color: white;
+  font-size: 2.2em;
+  margin-top: 0px;
 }
 
 @media (max-width: 1024px) {
@@ -373,13 +385,13 @@ input:focus {
     margin-bottom: 10px;
   }
 
-  fieldset.modal {
+  form.modal {
     width: 400px;
     height: 400px;
     background-color: rgba(92, 8, 8, 0.767);
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 15%;
     display: none;
   }
 }
@@ -510,7 +522,7 @@ button.btn:hover {
     width: 160px;
   }
 
-  fieldset.modal {
+  form.modal {
     width: 350px !important;
     height: 350px !important;
     background-color: rgba(92, 8, 8, 0.767);
@@ -531,4 +543,14 @@ button.btn:hover {
     border: none !important;
     padding: 5px 10px !important;
   }
+
+  form h2 {
+  margin-top: 8px;
+}
+
+  #mensagem-erro {
+  color: white;
+  font-size: 2.2em;
+  padding-bottom: 30px;
+}
 }

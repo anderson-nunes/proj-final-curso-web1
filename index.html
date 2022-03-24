@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/estilo.css" />
     <title>CAFÉ COADO NA HORA</title>
   </head>
-
   <body>
     <header>
       <div class="container">
@@ -54,36 +53,35 @@
           </p>
           <strong><p>Preencha seus dados e venha ser um de nós</p></strong>
           <button onclick="abrirModal()" class="btn">Clique Aqui</button>
-          <form>
-            <fieldset class="modal">
-              <div>
-                <div onclick="fecharModal()" class="fechar">
-                  <i class="fa fa-times-circle" aria-hidden="true"></i>
-                </div>
+          <form class="modal">
+            <div>
+              <div onclick="fecharModal()" class="fechar">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
               </div>
-              <h2>Dados pessoais</h2>
-              <div>
-                <label>Nome:</label>
-                <input type="text" name="nome" id="nome" required />
-              </div>
-              <div>
-                <label>E-mail:</label>
-                <input type="email" name="email" id="email" required />
-              </div>
-              <div>
-                <label>Data de nascimento:</label>
-                <input type="date" name="data" id="data" />
-              </div>
-              <div class="validar">
-                <input
-                  onclick="validarFormulario()"
-                  class="botoes"
-                  type="button"
-                  value="Enviar"
-                />
-                <input class="botoes" type="reset" value="Limpar" />
-              </div>
-            </fieldset>
+            </div>
+            <h2>Dados pessoais</h2>
+            <div>
+              <label>Nome:</label>
+              <input type="text" name="fn-nome" id="fid-nome" required />
+            </div>
+            <div>
+              <label>E-mail:</label>
+              <input type="email" name="fn-email" id="fid-email" required />
+            </div>
+            <div>
+              <label>Data de nascimento:</label>
+              <input type="date" name="fn-data" id="fid-data" />
+            </div>
+            <div class="validar">
+              <input
+                onclick="validarFormulario()"
+                class="botoes"
+                type="button"
+                value="Enviar"
+              />
+              <input class="botoes" type="reset" value="Limpar" />
+            </div>
+            <h2 id="mensagem-erro"></h2>
           </form>
         </div>
         <figure class="banner-img"></figure>
@@ -91,7 +89,7 @@
     </section>
     <section class="produtos">
       <div class="produtos-texto">
-        <figure class="produtos-img1"></figure>
+        <figure id="img" class="produtos-img1"></figure>
         <div class="texto">
           <h3>Saboreie uma pausa</h3>
           <p>Saboreie uma pausa com uma de nossas bebidas</p>
@@ -122,8 +120,8 @@
         </div>
       </div>
     </section>
-    <footer id="rodape">
-      <nav id="redes-sociais">
+    <footer class="rodape">
+      <nav class="redes-sociais">
         <ul>
           <a href="">
             <li><i class="fa fa-facebook fa-lg"></i></li>
