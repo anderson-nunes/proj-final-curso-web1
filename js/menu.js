@@ -12,20 +12,6 @@ menuToggle.addEventListener("click", () => {
   show = !show;
 });
 
-// FUNÇÃO PARA ABRIR MODAL//
-
-function abrirModal() {
-  var modal = document.querySelector(".modal");
-
-  modal.style.display = "block";
-}
-
-function fecharModal() {
-  var modal = document.querySelector(".modal");
-
-  modal.style.display = "none";
-}
-
 //FUNÇÃO PARA VALIDAR FORMULÁRIO
 
 function validarFormulario() {

@@ -94,7 +94,10 @@
           <h3>Saboreie uma pausa</h3>
           <p>Saboreie uma pausa com uma de nossas bebidas</p>
           <strong><p>Experimente o nosso delicioso café mocha</p></strong>
-          <a href="#" class="button">Saiba mais!!!</a>
+          <!-- <a href="#" class="button">Saiba mais!!!</a> -->
+          <button onclick="abrirModalImg('img/cafe-mocha.jpg')" class="button">
+            Saiba mais!!!
+          </button>
         </div>
       </div>
     </section>
@@ -104,7 +107,12 @@
           <h3>Saboreie uma pausa</h3>
           <p>Saboreie uma pausa com uma de nossas bebidas</p>
           <strong><p>Experimente o nosso delicioso café expresso</p></strong>
-          <a href="#" class="button">Saiba mais!!!</a>
+          <button
+            onclick="abrirModalImg('img/cafe-expresso.jpg')"
+            class="button"
+          >
+            Saiba mais!!!
+          </button>
         </div>
         <figure class="produtos-img2"></figure>
       </div>
@@ -116,10 +124,17 @@
           <h3>Saboreie uma pausa</h3>
           <p>Saboreie uma pausa com uma de nossas bebidas</p>
           <strong><p>Experimente o nosso delicioso frappuccino</p></strong>
-          <a href="#" class="button">Saiba mais!!!</a>
+          <button onclick="abrirModalImg('img/frappuccino.jpg')" class="button">
+            Saiba mais!!!
+          </button>
         </div>
       </div>
     </section>
+    <div id="modal-img-overlay" class="modal-img-overlay">
+      <div class="modal-img-content">
+        <img id="modal-img" src="" alt="" />
+      </div>
+    </div>
     <footer class="rodape">
       <nav class="redes-sociais">
         <ul>
@@ -145,5 +160,6 @@
       </address>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
