@@ -374,6 +374,7 @@ input:focus {
 
   button.btn {
     margin-bottom: 10px;
+    display: none !important;
   }
 
   .produtos .produtos-texto {
